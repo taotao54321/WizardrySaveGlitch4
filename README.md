@@ -2,6 +2,8 @@
 
 ## Usage
 
+Install z3py, and run:
+
 ```sh
 python3 main.py
 ```
