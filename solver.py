@@ -50,7 +50,7 @@ def solve(config: SolverConfig):
 def make_bonuspoint(solver, bp_max):
     bp = z3.BitVec("bp", 8)
 
-    solver.add(bp <= bp_max)
+    solver.add(z3.ULE(bp, bp_max))
 
     return bp
 
